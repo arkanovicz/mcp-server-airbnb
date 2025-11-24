@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  mcp-vacations:
+    build: .
+    image: mcp-server-vacations:latest
+    container_name: mcp-vacations
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
